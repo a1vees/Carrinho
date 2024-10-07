@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Pedrin.store</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="logu.png" alt="Logo" width="5%"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li class="dropdown">
+                    <a href="#servicos" class="dropbtn">Serviços</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#design">Design</a></li>
+                        <li><a href="#desenvolvimento">Desenvolvimento</a></li>
+                        <li><a href="#marketing">Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="cadastro.html"><button class="btn-login">Cadastre-se</button></a></li>
+                <li><a href="login.html"><button class="btn-login">Login</button></a></li>
+            </ul>
+        </nav>
+        <nav class="navsecundaria">
+            <p></p>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-login">
+            <center><a href="index.html"><img src="logu.png" alt="Logo" width="25%"></a></center>
+            <h2>Login</h2>
+            <form action="login.html" method="POST">
+                <label for="username">Nome de Usuário ou E-mail:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+                <button type="submit">Entrar</button>
+                <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Sobre Nós</h4>
+                <p>Somos uma empresa dedicada a fornecer soluções de alta qualidade para nossos clientes.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Email: contato@empresa.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Endereço: Rua Exemplo, 123, São Paulo, SP</p>
+            </div>
+            <div class="footer-section">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Pedrin.store. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

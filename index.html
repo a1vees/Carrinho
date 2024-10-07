@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal - Pedrin.store</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        /* Estilos adicionais para o botão do carrinho */
+        .cart-button {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-left: 20px;
+            transition: background-color 0.3s;
+        }
+        
+        .cart-button:hover {
+            background-color: #e55347;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="logu.PNG" alt="Logo" width="5%"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li class="dropdown">
+                    <a href="#servicos" class="dropbtn">Serviços</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#design">Design</a></li>
+                        <li><a href="#desenvolvimento">Desenvolvimento</a></li>
+                        <li><a href="#marketing">Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="cadastro.html"><button class="btn-login">Cadastre-se</button></a></li>
+                <li><a href="login.html"><button class="btn-login">Login</button></a></li>
+                <li><a href="carrinho.html" class="cart-button">Carrinho</a></li> <!-- Botão do Carrinho -->
+            </ul>
+        </nav>
+        <nav class="navsecundaria">
+            <p></p>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <h2>Moletom ecko</h2>
+                    <p>R$349,90</p>
+                    <img src="ecko.jpg" alt="ecko">
+                </div>
+                <div class="slide">
+                    <h2>Tênis Louis Vuitton</h2>
+                    <p>R$429,90</p>
+                    <img src="louiss.jpg" alt="louiss">
+                </div>
+                <div class="slide">
+                    <h2>Puma 180</h2>
+                    <p>R$320,90</p>
+                    <img src="puma180.jpg" alt="puma180">
+                </div>
+                <div class="slide">
+                    <h2>Mizuno pro 8 preto</h2>
+                    <p>R$420,00</p>
+                    <img src="mizuno.jpg" alt="mizuno">
+                </div>
+                <div class="slide">
+                    <h2>Calça balão clara</h2>
+                    <p>R$110,90</p>
+                    <img src="balao.jpg" alt="balao">
+                </div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+
+        <section class="cards">
+            <div class="card">
+                <img src="sport.jpg" alt="Mesa">
+                <h3>Lacoste Sport</h3>
+                <p>R$229,99</p>
+            </div>
+            <div class="card">
+                <img src="bigroxa.jpg" alt="Pedestal">
+                <h3>Moletom Big roxa</h3>
+                <p>R$279,99</p>
+            </div>
+            <div class="card">
+                <img src="pro 7.jpg" alt="Cadeira">
+                <h3>Minuzo Pro 7 branco</h3>
+                <p>R$419,90</p>
+            </div>
+        </section>
+
+        <section class="new-cards">
+            <div class="new-card">
+                <img src="Parka.jpg" alt="Cadeira">
+                <h3>Lacoste Parka</h3>
+                <p>R$2.149,00</p>
+            </div>
+            <div class="new-card">
+                <img src="listrada.jpg" alt="Pedestal">
+                <h3>Lacoste Listrada</h3>
+                <p>R$69,90</p>
+            </div>
+            <div class="new-card">
+                <img src="24k.jpg" alt="Cadeira">
+                <h3>Juliet 24K</h3>
+                <p>R$110,00</p>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2>Kits</h2>
+            
+            <div class="gallery-flex">
+                <div class="gallery-item"><img src="unnamed.jpg" alt="Imagem 1"></div>
+                <div class="gallery-item"><img src="unnamed (1).jpg" alt="Imagem 2"></div>
+                <div class="gallery-item"><img src="unnamed (5).jpg" alt="Imagem 3"></div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="unnamed (3).jpg" alt="Imagem 1"></div>
+                <div class="gallery-item"><img src="unnamed (4).jpg" alt="Imagem 2"></div>
+                <div class="gallery-item"><img src="unnamed (2).jpg" alt="Imagem 3"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Sobre Nós</h4>
+                <p>Somos uma empresa dedicada a fornecer soluções de alta qualidade para nossos clientes.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Email: contato@empresa.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Endereço: Rua Exemplo, 123, São Paulo, SP</p>
+            </div>
+            <div class="footer-section">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GamerTech Hub. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelector('.slides');
+            const slideCount = slides.children.length;
+            let index = 0;
+
+            const showSlide = (n) => {
+                if (n >= slideCount) {
+                    index = 0;
+                } else if (n < 0) {
+                    index = slideCount - 1;
+                } else {
+                    index = n;
+                }
+                slides.style.transform = `translateX(-${index * 100}%)`;
+            };
+
+            document.querySelector('.prev').addEventListener('click', () => {
+                showSlide(index - 1);
+            });
+
+            document.querySelector('.next').addEventListener('click', () => {
+                showSlide(index + 1);
+            });
+
+            setInterval(() => {
+                showSlide(index + 1);
+            }, 5000);
+        });
+    </script>
+</body>
+</html>

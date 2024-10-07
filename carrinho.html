@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Pedrin.store</title>
+    <link rel="stylesheet" href="carrinho.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="logo.png" alt="Logo" width="5%"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li class="dropdown">
+                    <a href="#servicos" class="dropbtn">Serviços</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#design">Design</a></li>
+                        <li><a href="#desenvolvimento">Desenvolvimento</a></li>
+                        <li><a href="#marketing">Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="cadastro.html"><button class="btn-login">Cadastre-se</button></a></li>
+                <li><a href="login.html"><button class="btn-login">Login</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Selecionar Produtos</h2>
+        <div id="product-list">
+            <div class="product">
+                <h3>Moletom ecko</h3>
+                <p>R$349,90</p>
+                <button onclick="addToCart('Moletom ecko', 349.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <h3>Tênis Louis Vuitton</h3>
+                <p>R$429,90</p>
+                <button onclick="addToCart('Tênis Louis Vuitton', 429.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <h3>Puma 180</h3>
+                <p>R$320,90</p>
+                <button onclick="addToCart('Puma 180', 320.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <h3>Mizuno pro 8 preto</h3>
+                <p>R$420,00</p>
+                <button onclick="addToCart('Mizuno pro 8 preto', 420.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <h3>Calça balão clara</h3>
+                <p>R$110,90</p>
+                <button onclick="addToCart('Calça balão clara', 110.90)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <h2>Carrinho de Compras</h2>
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço Unitário</th>
+                    <th>Preço Total</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Itens do carrinho serão inseridos aqui -->
+            </tbody>
+        </table>
+        <h3 id="total-price">Total: R$0,00</h3>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Sobre Nós</h4>
+                <p>Somos uma empresa dedicada a fornecer soluções de alta qualidade para nossos clientes.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Email: contato@empresa.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Pedrin.store. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="carrinho.js"></script>
+</body>
+</html>
